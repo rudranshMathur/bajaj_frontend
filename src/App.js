@@ -19,7 +19,7 @@ function App() {
       setError("");
 
       // Call the backend API
-      const response = await axios.post("http://localhost:8000/bfhl", parsedJson);
+      const response = await axios.post("https://bajaj-backend-phi-two.vercel.app/bfhl", parsedJson);
       setResponseData(response.data);
 
       // Reset selected options
